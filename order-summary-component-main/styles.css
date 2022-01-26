@@ -1,0 +1,140 @@
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    overflow: hidden;
+}
+
+main {
+    margin-top: 100px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: Red Hat Display;
+    border-radius: 15px;
+    background-color: white;
+}
+
+h1{
+    font-size: 25px;
+    margin-bottom: 0;
+    color: var(--darkBlue);
+    font-weight: 900;
+}
+h2 {
+    font-size: 16px;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.description {
+    padding: 10px 40px;
+    text-align: center;
+    line-height: 1.5;
+    color: var(--desaturatedBlue)
+}
+
+.plan {
+    background-color: var(--veryPaleBlue);
+    padding: 20px 0;
+    text-align: space-between;
+    border-radius: 15px;
+    display: inline-flex;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.plan h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px 0 20px;
+}
+
+.price {
+    color: var(--desaturatedBlue)
+}
+
+.change {
+    position: relative;
+    top: 15px;
+    right: -40px;
+    font-weight: 700;
+}
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.payment button {
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--brightBlue);
+    color: var(--veryPaleBlue);
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.6);
+    margin-bottom: 25px;
+}
+
+.payment button:hover {
+    background-color: var(--desaturatedBlue);
+}
+
+.cancel button {
+    background-color: white;
+    color: var(--desaturatedBlue)
+}
+.cancel button:hover {
+    color: var(--darkBlue);
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed; 
+    bottom: 0; left: 0; right: 0; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px;) {
+    main {
+    background-image: url('pattern-background-mobile.svg');
+    }
+}
+
+@media only screen and (min-width: 1440px;) {
+    main {
+    background-image: url('pattern-background-desktop.svg');
+    }
+}

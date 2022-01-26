@@ -1,0 +1,139 @@
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--mainBG);
+    margin-top: 50px;
+}
+.card {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    background-color: var(--cardBG);
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.title a {
+    font-weight: 600;
+    color: var(--white);
+}
+
+.title a:hover {
+    color: var(--cyan);
+}
+
+.imgContainer {
+    position: relative;
+    width: 100%;
+}
+
+.img1 {
+    display: block;
+    margin-bottom: 20px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0, 255, 247, 0.6);
+    border-radius: 10px;
+}
+
+.imgContainer:hover .overlay {
+    opacity: 1;
+}
+
+.eye {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+
+.text p{
+    color: var(--softBlue);
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid var(--line);
+
+}
+.eth{
+    display: inline-flex;
+    color: var(--cyan);
+    font-weight: 600;
+    
+}
+.days{
+    display: inline-flex;
+    margin-left: 100px;
+}
+.img2 {
+    margin-top: 13px;
+    margin-right: 5px;
+    height: 20px;
+}
+.creation {
+    display: inline-flex;
+}
+.creation p {
+    margin-top: 20px;
+    color: var(--softBlue);
+}
+.creation a {
+    color: var(--white);
+}
+
+.creation a:hover {
+    color: var(--cyan);
+}
+
+.avatar {
+    height: 35px;
+    margin-top: 15px;
+    margin-right: 20px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+.attribution { font-size: 11px; text-align: center; position:fixed;left:0; bottom: 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
