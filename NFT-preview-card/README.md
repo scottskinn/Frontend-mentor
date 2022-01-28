@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [My Github page](https://github.com/scottskinn/NFT-preview-card)
-- Live Site URL: [Live site](https://scottskinn.github.io/NFT-preview-card/)
+- Live Site URL: [Live site](https://https://scottskinn.github.io/Frontend-mentor/NFT-preview-card/)
 
 ## My process
 

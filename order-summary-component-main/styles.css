@@ -7,23 +7,23 @@
 }
 
 body {
-    background-image: url("./images/pattern-background-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
+    background: url("images/pattern-background-desktop.svg") no-repeat top center;
+    background-size: contain;
+    background-color: #e0e8ff;
     overflow: hidden;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin: ;
 }
 
-main {
-    margin-top: 100px;
-}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 350px;
-    height: 600px;
-    margin: auto;
+    width: 25rem;
+    height: 40rem;
     text-align: center;
-    font-family: Red Hat Display;
+    font-family: Red-Hat-Display, sans-serif;
     border-radius: 15px;
     background-color: white;
 }
@@ -53,7 +53,6 @@ h2 {
 .plan {
     background-color: var(--veryPaleBlue);
     padding: 20px 0;
-    text-align: space-between;
     border-radius: 15px;
     display: inline-flex;
     width: 300px;
@@ -92,6 +91,7 @@ button {
     font-size: 15px;
     font-weight: 900;
     cursor: pointer;
+    
 }
 .payment button {
     width: 300px;
@@ -105,6 +105,8 @@ button {
 
 .payment button:hover {
     background-color: var(--desaturatedBlue);
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 .cancel button {
@@ -127,14 +129,16 @@ button {
     color: hsl(228, 45%, 44%); 
 }
 
-@media only screen and (max-width: 375px;) {
-    main {
-    background-image: url('pattern-background-mobile.svg');
+
+/* @media screen and (min-width: 1440px) {
+    .card {
+    background-image: url('pattern-background-desktop.svg');
+    display: none;
     }
 }
 
-@media only screen and (min-width: 1440px;) {
-    main {
-    background-image: url('pattern-background-desktop.svg');
+@media screen and (max-width: 375px) {
+    .card {
+    background-color: var(--paleBlue);
     }
-}
+} */
