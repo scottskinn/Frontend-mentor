@@ -1,25 +1,129 @@
 * {
     margin: 0;
+    outline: none;
 }
 
-.card {
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto;
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--veryLightGray);
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+}
+
+.container {
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 15px;
+    justify-content: center;
+    
+}
+
+.card{
+    height: 100%;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.sedans, .suv, .luxury {
+    padding: 2rem;
+    width: 300px;
+    height: 390px;
+    /* flex: 1; */
+    /* width: 13rem;
+    height: 23rem; */
+}
+  
+.sedans {
+    background: var(--brightOrange);
+}
+
+.suv {
+    background: var(--darkCyan);
+}
+
+.luxury {
+    background: var(--veryDarkCyan);
+}
+
+.icon {
+    padding: .2rem;
+}
+
+h1, p {
+    padding: 1rem 0;
+    color: var(--white);
+}
+
+h1 {
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 
+.btn {
+    outline: none;
+    border: none;
+    background: var(--veryLightGray);
+    position: relative;
+    bottom: -3rem;
+    left: 1rem;
+    border-radius: 5rem;
+    height: 2.5rem;
+    width: 8rem;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+}
 
+.btn1 {
+    color: var(--brightOrange);
+}
 
+.btn2 {
+    color: var(--darkCyan);
+}
 
-main .attribution { 
+.btn3 {
+    color: var(--veryDarkCyan);
+}
+
+.attribution { 
     font-size: 11px; 
     text-align: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        margin: 10rem 0;
+        margin-bottom: 10px;
+        flex-direction: column;
+        
+    }
 }
