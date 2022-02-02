@@ -17,43 +17,35 @@ body {
     align-items: center;
     display: flex;
     font-size: 15px;
+    justify-content: center;
 }
 
 .container {
-    flex-direction: column;
+    max-width: 960px;
     margin: 0 auto;
-    font-size: 15px;
-    justify-content: center;
-    
 }
 
-.card{
-    height: 100%;
-    display: flex;
+.wrapper{
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 2rem;
-    border-radius: 12px;
+    border-radius: .5rem;
     overflow: hidden;
-}
+    margin: 2rem;
+} 
 
-.sedans, .suv, .luxury {
+.box {
     padding: 2rem;
-    width: 300px;
-    height: 390px;
-    /* flex: 1; */
-    /* width: 13rem;
-    height: 23rem; */
 }
   
-.sedans {
+.box1 {
     background: var(--brightOrange);
 }
 
-.suv {
+.box2 {
     background: var(--darkCyan);
 }
 
-.luxury {
+.box3 {
     background: var(--veryDarkCyan);
 }
 
@@ -61,12 +53,13 @@ body {
     padding: .2rem;
 }
 
-h1, p {
+h2, p {
     padding: 1rem 0;
     color: var(--white);
 }
 
-h1 {
+h2 {
+    text-transform: capitalize;
     font-family: Big Shoulders Display;
     font-weight: 700;
     font-size: 2.5rem;
@@ -84,8 +77,10 @@ p {
     outline: none;
     border: none;
     background: var(--veryLightGray);
+    display: inline-block;
+    margin-top: 55px;
     position: relative;
-    bottom: -3rem;
+    bottom: 0;
     left: 1rem;
     border-radius: 5rem;
     height: 2.5rem;
@@ -107,6 +102,12 @@ p {
     color: var(--veryDarkCyan);
 }
 
+.btn:hover {
+    border: solid var(--veryLightGray) 2px;
+    background-color: transparent;
+    color: var(--veryLightGray);
+  }
+
 .attribution { 
     font-size: 11px; 
     text-align: center;
@@ -119,11 +120,19 @@ p {
     color: hsl(228, 45%, 44%); 
 }
 
+@media screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+
+    }
+}
+
 @media screen and (max-width: 375px) {
-    .container {
-        margin: 10rem 0;
-        margin-bottom: 10px;
-        flex-direction: column;
-        
+    .wrapper {
+        grid-template-columns: 1fr;
+        margin: 4rem 1.5rem;
+    }
+    .box{
+        padding: 2.5rem;
     }
 }
