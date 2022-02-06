@@ -11,8 +11,8 @@ body {
     display: flex;
     background-color: hsl(233, 47%, 7%);
     height: 100vh;
-    flex-direction: row-reverse;
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
     align-items: center;
 }
 
@@ -22,6 +22,7 @@ body {
     max-width: 1000px;
     border-radius: 15px;
     overflow: hidden;
+    color: hsl(0, 0%, 100%);
 }
 
 .wrapper {
@@ -30,17 +31,67 @@ body {
 }
 
 .box {
-  margin: 2rem;
+  margin: 4rem;
 }
 
-.img {
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+h2 strong {
+  color: hsl(277, 64%, 61%);
+}
+
+.summary {
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 5rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+
+.num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.num12 {
+  text-transform: uppercase;
+}
+
+.stats .caps { 
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+
+.img-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.img-card {
+  position: relative;
+}
 
-
+.img-card::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: hsla(277, 64%, 61%, 0.6);
+}
 
 .attribution {
   font-size: 11px;
@@ -51,4 +102,29 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (max-width: 375px) {
+  body {
+    text-align: center;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+
+  .img-card {
+    order: -1;
+  }
+
+  .stats {
+  flex-direction: column;
+  margin-right: 0;
+  }
+
+  .attribution {
+    display: none;
+  }
 }
