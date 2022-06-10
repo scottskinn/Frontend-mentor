@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   
+  <script type="module" src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
   <title>Frontend Mentor | Expenses chart component</title>
 </head>
 
@@ -20,17 +24,10 @@
       <span>$921.48</span>
     </div>
     
-    <div class="spending-cart">
+    <div class="spending-chart">
       <h3 class="spending-title">Spending - Last 7 days</h3>
-
-      <div class="days">
-        <p>mon</p>
-        <p>tue</p>
-        <p>wed</p>
-        <p>thu</p>
-        <p>fri</p>
-        <p>sat</p>
-        <p>sun</p>
+      <div>
+        <canvas id="myChart"></canvas>
       </div>
 
       <div class="total">
@@ -50,5 +47,24 @@
       Coded by <a href="https://github.com/scottskinn">Scott Skinn</a>.
     </div>
   </div>
+
+  <canvas id="myChart" width="400" height="400"></canvas>
+  <script>
+    fetch('data.json')
+      .then(response =>response.json())
+      .then(data => myData(data))
+      .catch(error => console.log(error));
+
+    function myData(data) {
+      console.log(data);
+      data.forEach(element => {
+        return element;
+      });
+    }
+
+
+    
+  </script>
+
 </body>
 </html>
