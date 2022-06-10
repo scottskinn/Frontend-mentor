@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]([https://your-solution-url.com](https://github.com/scottskinn/Frontend-mentor/edit/main/expenses-chart-component-main))
-- Live Site URL: [Live URL]([https://your-live-site-url.com](https://scottskinn.github.io/Frontend-mentor/expenses-chart-component-main/))
+- Solution URL: [Solution URL](https://your-solution-url.com](https://github.com/scottskinn/Frontend-mentor/edit/main/expenses-chart-component-main)
+- Live Site URL: [Live URL](https://your-live-site-url.com](https://scottskinn.github.io/Frontend-mentor/expenses-chart-component-main/)
 
 ## My process
 
