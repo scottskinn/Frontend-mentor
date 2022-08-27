@@ -12,15 +12,20 @@
   <title>Advice generator app</title>
 </head>
 <body>
-  <main>
-    <div id="quote-id" class="advice-#">
+  <main class="container">
+    <div id="quote-id" class="advice-num">
     </div>
     
     <div id="quote-text" class="quote">
     </div>
-    
+
+    <picture class="divider-line">
+      <source media="(max-width: 545px)"
+      srcset="./images/pattern-divider-mobile.svg">
+     <img src="./images/pattern-divider-desktop.svg" alt="divider line"/>
+    </picture>
     <button class="btn" id="btn">
-      <img src="./images/icon-dice.svg"/>
+      <img src="./images/icon-dice.svg" alt="dice button"/>
     </button>
   </main>
   <div class="attribution">
