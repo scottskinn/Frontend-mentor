@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <div class="container">
+    <div class="grid">
+      <div class="main-img">
+        <img src="./images/image-product-desktop.jpg" alt="perfume" class="img" />
+      </div>
 
-  Preview
+      <div class="card-content">
+        <h2 class="title">Perfume</h2>
+        <h3 class="title-name">Gabrielle Essence Eau De Parfum</h3>
+        <p class="description">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <p class="current-price">$149.99</p>
+          <p class="old-price">$169.99</p>
+        </div>
+        <button class="btn">
+          <img src="./images/icon-cart.svg" alt="icon-cart"/>
+          Add to Cart
+        </button>
+      </div>
+    </div>
 
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Scott Skinn</a>.
   </div>
 </body>
+
 </html>
